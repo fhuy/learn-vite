@@ -5,18 +5,13 @@ import Login from "./views/login";
 import Home from "./views/Home";
 import User from "./views/User";
 
+import GetRouters from "./router";
+
 function App() {
   return (
     <div>
       <HashRouter>
-        <Routes>
-          <Route path="/" element={<Navigate to="/layout" />}></Route>
-          {/* 默认挂载index路由 */}
-          <Route path="/layout" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="user" element={<User />} />
-          </Route>
-        </Routes>
+        <GetRouters />
       </HashRouter>
     </div>
   );

@@ -10,8 +10,9 @@ function App() {
     <div>
       <HashRouter>
         <Routes>
+          <Route path="/" element={<Navigate to="/layout" />}></Route>
+          {/* 默认挂载index路由 */}
           <Route path="/layout" element={<Layout />}>
-            {/* 默认挂载index路由 */}
             <Route index element={<Home />} />
             <Route path="user" element={<User />} />
           </Route>

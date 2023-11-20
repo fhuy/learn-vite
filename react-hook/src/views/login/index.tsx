@@ -3,7 +3,9 @@ function Logon() {
   return (
     <div>
       <div>login</div>
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 }

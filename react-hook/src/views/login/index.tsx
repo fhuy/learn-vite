@@ -1,5 +1,11 @@
-import { Outlet } from "react-router-dom";
+import { useNavigate, Outlet } from "react-router-dom";
 function Logon() {
+  const navigate = useNavigate();
+
+  const handleFinish = function (val: { username: string; password: string }) {
+    navigate("/layout/home");
+  };
+
   return (
     <div>
       <div>login</div>

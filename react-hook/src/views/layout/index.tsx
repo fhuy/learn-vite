@@ -11,6 +11,15 @@ function Layout() {
         <div>
           <Link to="/layout/user">用户</Link>
         </div>
+        <div>
+          <Link to="/layout/ticket">抢票</Link>
+        </div>
+        <div>
+          <Link to="/layout/test">测试</Link>
+        </div>
+        <div>
+          <Link to="/layout/countdown">倒计时</Link>
+        </div>
       </aside>
       <section>
         <header>header</header>
